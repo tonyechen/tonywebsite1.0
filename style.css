@@ -211,9 +211,9 @@ nav div {
         right: 0;
     }
 
-    .drop-down-menu .tabs {
-        /* display: none; */
-        
+    .tab-items{
+        display: none;
+        width: 100%;
     }
 
     #menu-button {
