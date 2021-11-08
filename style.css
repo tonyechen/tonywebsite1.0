@@ -9,6 +9,7 @@
 
 body {
     position: relative;
+    width: 100%;
     background: #e0fbff;
     color: white;
     overflow-x: hidden;
@@ -35,7 +36,8 @@ nav {
 
 [class*="section"] { 
     padding: 50px 0;
-    height: 1000px;
+    height: 100vh;
+    max-height: 100vh;
 }
 
 /* ############# Nav Bar ############## */
@@ -65,7 +67,7 @@ nav div {
 
 .home-section {
     position: relative;
-    height: 1040px;
+    height: 100vh;
     background-image: linear-gradient(to bottom,#8ae5ff, #e0fbff);
 }
 
@@ -128,7 +130,6 @@ nav div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
     /* background: url(green-background.jpg) no-repeat fixed top; */
     /* background-size: cover; */
     /* When using the shorthand property the order of the property values is:
