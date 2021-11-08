@@ -9,6 +9,7 @@
 
 body {
     position: relative;
+    width: 100%;
     background: #e0fbff;
     color: white;
     overflow-x: hidden;
@@ -19,6 +20,7 @@ nav {
     background: #146360;
     top: 0;
     display: flex;
+    max-height: 53.2px;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
@@ -55,6 +57,10 @@ nav div {
     color: inherit;
 
     transition: transform 300ms ease-in-out;
+}
+
+#menu-button {
+    display: none;
 }
 
 .tabs:hover {
@@ -197,8 +203,35 @@ nav div {
         font-size: 60px;
     }
 
+    .drop-down-menu {
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+    }
+
+    .drop-down-menu .tabs {
+        /* display: none; */
+        
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    #menu-button:hover {
+        display: block;
+        height: 100%;
+    }
+
+    .home-container {
+        top: 20%;
+    }
+
     .home-container h1 {
         font-size: 25pt;
+
     }
     
     .home-background {
@@ -214,7 +247,7 @@ nav div {
     }
 
     .about-body-text-qualities {
-        height: 100%;
+        width: 100%;
         font-size: 3 vw;
     }
 }   
