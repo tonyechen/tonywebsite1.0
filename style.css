@@ -22,6 +22,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    
+}
+
+[class*="title"] {
+    color:#146360;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 [class*="section"] { 
@@ -50,8 +59,6 @@ nav div {
 
 .tabs:hover {
     background: #269e9a;
-    transform: translate(0, 5px) scale(1.1, 1.1);
-    box-shadow: 0 2px 2px 1px #082a29;
 }
 
 /* ############# Home ############## */
@@ -118,8 +125,12 @@ nav div {
 
 /* ############# About ############## */
 .about-section {
-    background: url(green-background.jpg) no-repeat fixed top;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* background: url(green-background.jpg) no-repeat fixed top; */
+    /* background-size: cover; */
     /* When using the shorthand property the order of the property values is:
 
         background-color
@@ -127,12 +138,6 @@ nav div {
         background-repeat
         background-attachment
         background-position */
-}
-
-.about-title {
-    font-size: 80px;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .about-container {
@@ -143,38 +148,51 @@ nav div {
     align-items: center;
     background: white;
     color: black;
-    margin: auto;
     border-radius: 48px;
+    box-shadow: 0 0 5px black;
     padding: 1%;
 
 }
 
-.about-container img{
-    width: 50%;
-}
-
 .about-body-text {
-    width: 60%;
+    width: 50%;
     padding: 48px;
 }
 
 .about-item {
     width: 50%;
-    height: 50%;
+    height: 100%;
     border-radius: 48px;
 }
+
+.about-body-text-qualities {
+    
+}
+
+/* ############# Portfolio ############## */
+
+
+
+/* ############# Blog ############## */
+
+
+/* ############# Contact ############## */
 
 @media only screen and (max-width: 750px) {
     .home-container h1 {
         font-size: 25pt;
     }
-
+    
     .home-background {
         object-fit: cover;
     }
-    
+
     .about-item {
         width: 100%;
         height: 100%;
+    }
+
+    [class*="title"] {
+        font-size: 60px;
     }
 }   
