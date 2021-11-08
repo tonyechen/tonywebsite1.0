@@ -9,7 +9,7 @@
 
 body {
     position: relative;
-    width: 100%;
+    width: 100vw;
     background: #e0fbff;
     color: white;
     overflow-x: hidden;
@@ -17,7 +17,7 @@ body {
 
 nav {
     position: sticky;
-    background: #082a29;
+    background: #146360;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ nav {
 
 [class*="title"] {
     color:#146360;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 20px;
     text-align: center;
     
@@ -37,7 +37,6 @@ nav {
 [class*="section"] { 
     padding: 50px 0;
     height: 100vh;
-    max-height: 100vh;
 }
 
 /* ############# Nav Bar ############## */
@@ -112,8 +111,8 @@ nav div {
 
 .home-background {
     position: absolute;
-    height: 60%;
-    width: 100%;
+    height: 50%;
+    width: 110%;
     bottom: 0;
 }
 
@@ -130,6 +129,7 @@ nav div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
     /* background: url(green-background.jpg) no-repeat fixed top; */
     /* background-size: cover; */
     /* When using the shorthand property the order of the property values is:
@@ -142,7 +142,8 @@ nav div {
 }
 
 .about-container {
-    width: 85%;
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -155,21 +156,33 @@ nav div {
 
 }
 
-.about-body-text {
-    width: 50%;
-    padding: 48px;
-}
-
 .about-item {
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: 48px;
 }
 
-.about-body-text-qualities {
-    
+.about-body-text {
+    width: 60%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
+.about-body-text-qualities {
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: start;
+}
+
+.about-body-text-qualities div {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 1% 5%;
+    width: 33%;
+    text-align: center;
+    font-size: 1.5vw;
+}
 /* ############# Portfolio ############## */
 
 
@@ -180,6 +193,11 @@ nav div {
 /* ############# Contact ############## */
 
 @media only screen and (max-width: 750px) {
+    
+    [class*="title"] {
+        font-size: 60px;
+    }
+
     .home-container h1 {
         font-size: 25pt;
     }
@@ -192,8 +210,12 @@ nav div {
         width: 100%;
         height: 100%;
     }
+    .about-body-text {
+        width: 100%;
+    }
 
-    [class*="title"] {
-        font-size: 60px;
+    .about-body-text-qualities {
+        height: 100%;
+        font-size: 3 vw;
     }
 }   
