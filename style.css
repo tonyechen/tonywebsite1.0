@@ -10,6 +10,7 @@
 body {
     position: relative;
     width: 100vw;
+    width: 100%;
     background: #e0fbff;
     color: white;
     overflow-x: hidden;
