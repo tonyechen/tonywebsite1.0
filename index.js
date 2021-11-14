@@ -19,6 +19,7 @@ window.addEventListener("scroll", function(e) {
 
 let homeButton = document.querySelector(".home-button")
 
+/*
 homeButton.addEventListener("mousemove", function(e) {
     let turnY = -(e.offsetX - homeButton.clientWidth / 2) * .25;
     let turnX = (e.offsetY - homeButton.clientHeight / 2);
@@ -31,6 +32,7 @@ homeButton.addEventListener("mouseleave", function(e) {
     let turn = 0;
     homeButton.style.transform = `rotateY(${turn}deg)`;
 });
+*/
 
 // menu bar drop down
 
