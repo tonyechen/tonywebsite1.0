@@ -206,8 +206,31 @@ nav div {
 
 
 /* ############# Blog ############## */
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
 
+.blog-container {
+    width: 75%;
+    min-width: 900px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    color: black;
+    border-radius: 48px;
+    box-shadow: 0 0 5px black;
+    padding: 2%;
+}
 
+.blog-text {
+    color: black;
+}
 
 /* ############# Contact ############## */
 
