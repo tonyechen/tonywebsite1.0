@@ -44,3 +44,16 @@ menuButton.addEventListener("mouseover", function(e) {
     });
 });
 
+menu.forEach(function(menu_item) {
+    menu_item.addEventListener("mouseover", function() {
+        menu.forEach((menu_item) => {
+            menu_item.classList.add("active");
+        });
+    });
+
+    menu_item.addEventListener("mouseleave", function() {
+        menu.forEach((menu_item) => {
+            menu_item.classList.remove("active");
+        });
+    });
+});
