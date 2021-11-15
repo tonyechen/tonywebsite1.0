@@ -16,10 +16,10 @@ window.addEventListener("scroll", function(e) {
 });
 
 // Check out button tilt effect
-
-let homeButton = document.querySelector(".home-button")
-
 /*
+
+let homeButton = document.querySelector(".home-button");
+
 homeButton.addEventListener("mousemove", function(e) {
     let turnY = -(e.offsetX - homeButton.clientWidth / 2) * .25;
     let turnX = (e.offsetY - homeButton.clientHeight / 2);
@@ -37,6 +37,10 @@ homeButton.addEventListener("mouseleave", function(e) {
 // menu bar drop down
 
 let menuButton = document.querySelector("#menu-button");
+let menu = document.querySelectorAll(".drop-down-menu .tabs");
 menuButton.addEventListener("mouseover", function(e) {
-    document.querySelector(".tabs").style.display = "block";
+    menu.forEach((menu_item) => {
+        menu_item.classList.add("active");
+    });
 });
+
