@@ -148,11 +148,13 @@ nav div {
 
 .about-container {
     width: 75%;
+    min-width: 900px;
     height: 100%;
+    min-height: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: white;
     color: black;
     border-radius: 48px;
@@ -169,30 +171,42 @@ nav div {
 
 .about-body-text {
     width: 60%;
+    padding:  auto;
     padding-left: 2%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-body-text p {
+    font-size: 1.2em;
 }
 
 .about-body-text-qualities {
     display: flex;
-    margin-bottom: 10%;
-    justify-content: start;
+    justify-content: space-between;
+    margin: 2% 0;
 }
 
 .about-body-text-qualities div {
-    border: 1px solid black;
-    border-radius: 100px;
-    padding: 1% 5%;
-    width: 33%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 30%;
     text-align: center;
-    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    background: #288380;
+    color: white;
 }
 /* ############# Portfolio ############## */
 
 
 
 /* ############# Blog ############## */
+
 
 
 /* ############# Contact ############## */
@@ -237,6 +251,10 @@ nav div {
         object-fit: cover;
     }
 
+    .about-container {
+        min-width: min-content;
+    }
+
     .about-item {
         width: 100%;
         height: 100%;
@@ -245,8 +263,22 @@ nav div {
         width: 100%;
     }
 
+    .about-body-text p {
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
     .about-body-text-qualities {
         width: 100%;
-        font-size: 3 vw;
+        font-size: 10vw;
+        flex-wrap: wrap;
+    }
+
+    .about-body-text-qualities div {
+        width: 30%;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 18px;
+        font-size: 16px;
     }
 }   
