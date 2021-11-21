@@ -1,143 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif ;
-    scroll-behavior: smooth;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
-    width: 100%;
-    background: #e0fbff;
-    color: white;
-    overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  background: #e0fbff;
+  color: white;
+  overflow-x: hidden;
 }
 
 nav {
-    position: sticky;
-    background: #146360;
-    top: 0;
-    display: flex;
-    max-height: 53.2px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    
+  position: sticky;
+  background: #146360;
+  top: 0;
+  display: flex;
+  max-height: 53.2px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
 [class*="title"] {
-    color:#146360;
-    font-size: 70px;
-    margin-bottom: 20px;
-    text-align: center;
-    
+  color: #146360;
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-[class*="section"] { 
-    padding: 50px 0;
-    height: 100vh;
+[class*="section"] {
+  padding: 50px 0;
+  height: 100vh;
 }
 
 /* ############# Nav Bar ############## */
 
 nav div {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .tabs {
-    padding: 15px 20px;
-    background: #146360;
+  padding: 15px 20px;
+  background: #146360;
 
-    font-size: 15pt;
-    text-decoration: none;
-    color: inherit;
+  font-size: 15pt;
+  text-decoration: none;
+  color: inherit;
 
-    transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 #menu-button {
-    display: none;
+  display: none;
 }
 
 .tabs:hover {
-    background: #269e9a;
+  background: #269e9a;
 }
 
 /* ############# Home ############## */
 
 .home-section {
-    position: relative;
-    height: 100vh;
-    background-image: linear-gradient(to bottom,#8ae5ff, #e0fbff);
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to top, #8ae5ff, #e0fbff);
 }
 
 .home-container {
-    position: sticky;
-    top: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  position: sticky;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .home-container h1 {
-    font-size: 30pt;
-    color: orangered;
-    text-shadow: .5px .5px .5px black;
-    line-height: 1.5;
-    margin: 0 10px;
+  font-size: 30pt;
+  color: orangered;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  line-height: 1.5;
+  margin: 0 10px;
 }
 
 .home-button {
-    height: 44px;
-    width: 300px;
-    background-image: linear-gradient(red, rgb(255, 110, 58));
-    margin: 16px;
-    border-radius: 50px;
-    transform-style: preserve-3d;
-    overflow: visible;
-    transition: transform 300ms ease-out;
+  height: 44px;
+  width: 300px;
+  background-image: linear-gradient(red, rgb(255, 110, 58));
+  margin: 16px;
+  border-radius: 50px;
+  transform-style: preserve-3d;
+  overflow: visible;
+  transition: transform 300ms ease-out;
 }
 
 #special {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 8px 16px;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    transform: translateZ(40px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transform: translateZ(40px);
 }
 
 .home-background {
-    position: absolute;
-    height: 50%;
-    width: 110%;
-    bottom: 0;
+  position: absolute;
+  height: 50%;
+  width: 110%;
+  bottom: 0;
 }
 
 .clouds {
-    top: 0;
-    height: 80%;
-    left: -5%;
-    width: 110%;
+  top: 0;
+  height: 80%;
+  left: -5%;
+  width: 110%;
 }
-
 
 /* ############# About ############## */
 .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    /* background: url(green-background.jpg) no-repeat fixed top; */
-    /* background-size: cover; */
-    /* When using the shorthand property the order of the property values is:
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  /* background: url(green-background.jpg) no-repeat fixed top; */
+  /* background-size: cover; */
+  /* When using the shorthand property the order of the property values is:
 
         background-color
         background-image
@@ -147,161 +143,197 @@ nav div {
 }
 
 .about-container {
-    width: 75%;
-    min-width: 900px;
-    height: 100%;
-    min-height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    background: white;
-    color: black;
-    border-radius: 48px;
-    box-shadow: 0 0 5px black;
-    padding: 1%;
-
+  width: 75%;
+  min-width: 900px;
+  height: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  color: black;
+  border-radius: 48px;
+  box-shadow: 0 0 5px black;
+  padding: 1%;
 }
 
 .about-item {
-    width: 40%;
-    height: 100%;
-    border-radius: 48px;
+  width: 40%;
+  height: 100%;
+  border-radius: 48px;
 }
 
 .about-body-text {
-    width: 60%;
-    padding:  auto;
-    padding-left: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 60%;
+  padding: auto;
+  padding-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .about-body-text p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .about-body-text-qualities {
-    display: flex;
-    justify-content: space-between;
-    margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
 }
 
 .about-body-text-qualities div {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    width: 30%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5em;
-    background: #288380;
-    color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5em;
+  background: #288380;
+  color: white;
 }
 /* ############# Portfolio ############## */
 
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
 
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+  align-items: center;
+}
+
+.project {
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0px 0px 20px 0px grey;
+  border-radius: 1rem;
+}
+
+.project img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  transform: translateZ(30px);
+}
+
+.project p {
+  transform: translateZ(60px);
+}
 
 /* ############# Blog ############## */
 .blog-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 
 .blog-container {
-    width: 75%;
-    min-width: 900px;
-    min-height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    background: white;
-    color: black;
-    border-radius: 48px;
-    box-shadow: 0 0 5px black;
-    padding: 2%;
+  width: 75%;
+  min-width: 900px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  color: black;
+  border-radius: 48px;
+  box-shadow: 0 0 5px black;
+  padding: 2%;
 }
 
 .blog-text {
-    color: black;
+  color: black;
 }
 
 /* ############# Contact ############## */
 
 @media only screen and (max-width: 750px) {
-    
-    [class*="title"] {
-        font-size: 60px;
-    }
+  [class*="title"] {
+    font-size: 60px;
+  }
 
-    .drop-down-menu {
-        position: absolute;
-        flex-direction: column;
-        align-items: end;
-        top: 0;
-        right: 0;
-    }
+  .drop-down-menu {
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+  }
 
-    #menu-button {
-        display: block;
-    }
+  #menu-button {
+    display: block;
+  }
 
-    .drop-down-menu .tabs {
-        display: none;
-    }
+  .drop-down-menu .tabs {
+    display: none;
+  }
 
-    .drop-down-menu .tabs+.active {
-        width: 120px;
-        display: block;
-    }
+  .drop-down-menu .tabs + .active {
+    width: 120px;
+    display: block;
+  }
 
-    .home-container {
-        top: 20%;
-    }
+  .home-container {
+    top: 20%;
+  }
 
-    .home-container h1 {
-        font-size: 25pt;
+  .home-container h1 {
+    font-size: 25pt;
+  }
 
-    }
-    
-    .home-background {
-        object-fit: cover;
-    }
+  .home-background {
+    object-fit: cover;
+  }
 
-    .about-container {
-        min-width: min-content;
-    }
+  .about-container {
+    min-width: min-content;
+  }
 
-    .about-item {
-        width: 100%;
-        height: 100%;
-    }
-    .about-body-text {
-        width: 100%;
-    }
+  .about-item {
+    width: 100%;
+    height: 100%;
+  }
+  .about-body-text {
+    width: 100%;
+  }
 
-    .about-body-text p {
-        font-size: 20px;
-        padding-bottom: 5%;
-    }
+  .about-body-text p {
+    font-size: 20px;
+    padding-bottom: 5%;
+  }
 
-    .about-body-text-qualities {
-        width: 100%;
-        font-size: 10vw;
-        flex-wrap: wrap;
-    }
+  .about-body-text-qualities {
+    width: 100%;
+    font-size: 10vw;
+    flex-wrap: wrap;
+  }
 
-    .about-body-text-qualities div {
-        width: 30%;
-        font-size: 20px;
-        padding: 5px 10px;
-        border-radius: 18px;
-        font-size: 16px;
-    }
-}   
+  .about-body-text-qualities div {
+    width: 30%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 18px;
+    font-size: 16px;
+  }
+
+  .blog-container {
+    min-width: min-content;
+  }
+}
