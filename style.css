@@ -264,6 +264,18 @@ nav div {
 
 /* ############# Contact ############## */
 
+@media only screen and (max-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 750px) {
   [class*="title"] {
     font-size: 60px;
@@ -335,5 +347,9 @@ nav div {
 
   .blog-container {
     min-width: min-content;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
   }
 }
