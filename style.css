@@ -14,6 +14,12 @@ body {
   overflow-x: hidden;
 }
 
+hr {
+  height: 1px;
+  background-color: #146360;
+  border: none;
+}
+
 nav {
   position: sticky;
   background: #146360;
@@ -250,6 +256,7 @@ nav div {
   flex-direction: column;
   align-items: center;
   height: auto;
+  max-height: min-content;
 }
 
 .portfolio-container {
@@ -257,12 +264,14 @@ nav div {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 25px;
   row-gap: 25px;
+  text-align: center;
   align-items: center;
 }
 
 .project {
   color: black;
   background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
   padding: 25px;
   border-radius: 1rem;
   transform-style: preserve-3d;
@@ -309,9 +318,38 @@ nav div {
 
 .blog-text {
   color: black;
+  font-size: 20px;
 }
 
 /* ############# Contact ############## */
+.contact-footer {
+  background-color: #302f2f;
+  color: white;
+  padding: 2% 0 8%;
+}
+
+.contact-title {
+  color: white;
+}
+
+.contact-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.change-color {
+  margin: 0 5vw;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(310deg)
+    brightness(107%) contrast(103%);
+}
+
+.change-color:hover {
+  filter: invert(12%) sepia(99%) saturate(4966%) hue-rotate(174deg)
+    brightness(86%) contrast(84%);
+  transition: filter 300ms ease-in-out;
+}
 
 /* ############# Mobile-Compatability ############## */
 @media only screen and (max-width: 1200px) {
