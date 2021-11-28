@@ -19,7 +19,6 @@ nav {
   background: #146360;
   top: 0;
   display: flex;
-  max-height: 53.2px;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
@@ -127,6 +126,7 @@ nav div {
 
 /* ############# About ############## */
 .about-section {
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +181,7 @@ nav div {
 .about-body-text-qualities {
   display: flex;
   justify-content: space-between;
-  margin: 2% 0;
+  margin: 1.5% 0;
 }
 
 .about-body-text-qualities div {
@@ -196,6 +196,42 @@ nav div {
   background: #288380;
   color: white;
 }
+
+/* ############# Skills ############## */
+.skills-section {
+  background: #146360;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.skills-title {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 100px;
+  row-gap: 25px;
+  align-items: center;
+}
+
+.skill {
+  color: black;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0px 0px 2px 0px rgb(212, 208, 208);
+}
+
+.skill img {
+  width: 125px;
+  height: 125px;
+}
+
 /* ############# Portfolio ############## */
 
 .portfolio-section {
@@ -208,7 +244,6 @@ nav div {
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   column-gap: 25px;
   row-gap: 25px;
   align-items: center;
@@ -218,17 +253,20 @@ nav div {
   color: black;
   background: rgba(255, 255, 255, 0.8);
   padding: 25px;
+  border-radius: 1rem;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  box-shadow: 0px 0px 20px 0px grey;
-  border-radius: 1rem;
+  box-shadow: 0px 0px 2px 0px rgb(212, 208, 208);
 }
 
 .project img {
   width: 200px;
   height: 200px;
-  border-radius: 100px;
+  border-radius: 2em;
   transform: translateZ(30px);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform ease-in-out 300ms;
 }
 
 .project p {
@@ -340,12 +378,13 @@ nav div {
   .about-body-text-qualities div {
     width: 30%;
     font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 18px;
+    padding: 15px 10px;
+    border-radius: 1rem;
     font-size: 16px;
   }
 
   .blog-container {
+    padding: 30px 10px;
     min-width: min-content;
   }
 
