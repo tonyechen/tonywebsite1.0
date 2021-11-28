@@ -65,3 +65,18 @@ projects.forEach((project_item) => {
   project_item.setAttribute("data-tilt-scale", "1.1");
   project_item.setAttribute("data-tilt-scale", "1.1");
 });
+
+// skills text animation
+const skill_names = document.querySelectorAll(".skill p");
+const skills = document.querySelectorAll(".skill");
+skills.forEach((skill) => {
+  skill.addEventListener("mouseover", () => {
+    skill_names.forEach((skill_name) => {
+      skill_name.style.opacity = "1";
+      skill_name.style.transform = "translateY(0px)";
+      skill_name.style.transition =
+        "transform 0.5s ease-in, opacity 0.5s ease-in";
+      setTimeout(1000);
+    });
+  });
+});
