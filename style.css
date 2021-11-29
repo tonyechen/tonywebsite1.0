@@ -149,19 +149,20 @@ nav div {
 
 .about-container {
   width: 75vw;
-  min-width: 1100px;
+  min-width: 1130px;
   max-width: 1400px;
   height: auto;
   min-height: 350px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background: white;
   color: black;
   border-radius: 48px;
   box-shadow: 0 0 5px black;
   padding: 1%;
+  row-gap: 20px;
 }
 
 .about-item {
@@ -174,15 +175,16 @@ nav div {
 .about-body-text {
   width: 60%;
   height: 100%;
-  padding: auto;
+  padding-left: 1.5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  font-size: 24px;
 }
 
 .about-body-text p {
-  font-size: 1.4em;
+  font-size: 24px;
 }
 
 .about-body-text-qualities {
@@ -199,9 +201,26 @@ nav div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 24px;
   background: #288380;
   color: white;
+}
+
+.about-container a {
+  margin: 2% 40%;
+  width: 20%;
+  padding: 15px 0;
+  border-radius: 1em;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background-image: linear-gradient(red, rgb(255, 110, 58));
+  text-align: center;
+}
+
+.about-container a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 /* ############# Skills ############## */
