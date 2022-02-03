@@ -314,9 +314,6 @@ nav div {
   transition: transform 300ms ease-in-out;
 }
 
-.project p {
-  transform: translateZ(60px);
-}
 
 /* ############# Blog ############## */
 .blog-section {
